@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+* {
+  font-family: 'Courgette', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-image: url("https://images.unsplash.com/photo-1520970519539-8fa53b242458?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #e8e8e8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+}
+
+h1 {
+  background: linear-gradient(to left, #aa4b6b, #547e40);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: 'Courgette', cursive;
+  font-size: 60px;
+  margin-top: 200px;
+  margin-left: 150px;
+}
+
+input {
+  color: rgb(72, 16, 16);
+  width: 19%;
+  margin-left: 160px;
+  padding: 5px;
+  border: 2px solid rgb(215, 210, 210);
+}
+
+input::placeholder {
+  color: rgba(159, 105, 123, 0.545);
+
+}
+
+.add {
+
+  border: 2px solid rgb(215, 210, 210);
+  padding: 8px;
+}
+
+.btn {
+
+  width: 21%;
+  margin-left: 166px;
+  background-color: #455f0e;
   color: white;
+  font-size: 20px;
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
+ul,
+li {
+  font-family: 'Bad Script', cursive;
+  font-size: 25px;
+  list-style-type: none;
+  color: #455f0e;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.crossed {
+
+  text-decoration: line-through 2px rgba(177, 24, 65, 0.573);
+  -webkit-text-decoration-line: line-through;
+  -webkit-text-decoration-color: rgb(177, 24, 65);
+  -webkit-text-decoration-thickness: 2px;
+  background-color: #f2c0cf9d;
+
+}
+
+@media all and (max-width:700px) {
+
+  h1 {
+    margin: 0;
+    font-size: 40px;
   }
-  to {
-    transform: rotate(360deg);
+
+  input {
+    margin: 0;
+    width: 50%;
+  }
+
+  .btn {
+    margin: 0;
+    width: 50%;
+  }
+
+  body {
+    background-size:145%;
+    background-color: #e8e8e8;
+    background-position: center top;
+    margin-left: 100px;
   }
 }
